@@ -80,7 +80,7 @@ export default function Signup() {
     e.preventDefault(); // Enable "Enter" key submission
     
     // Basic validation
-    if(!form.uname || !form.userName || !form.pass ||!cashBalance ||!onlineBalance ||!monthlyBudget) {
+    if(!form.uname || !form.userName || !form.pass ||!form.cashBalance ||!form.onlineBalance ||!form.monthlyBudget) {
         alert("Please fill in all required fields");
         return;
     }

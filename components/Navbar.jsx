@@ -37,7 +37,7 @@ export default function Navbar() {
           to="/scan" 
           className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}
         >
-          Scan & Bill
+          Scan & Add Expense
         </NavLink>
       </div>
 
