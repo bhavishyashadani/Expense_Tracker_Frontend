@@ -1,0 +1,114 @@
+/* Full screen centering wrapper */
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* Light gray background */
+}
+
+/* The white card */
+.auth-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 400px; /* Limits width on large screens */
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin: 0 0 1.5rem 0;
+  color: #1f2937;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+/* Form Layout */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Space between inputs */
+}
+
+.auth-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+  background-color: #f9fafb;
+}
+
+.auth-input:focus {
+  background-color: #fff;
+  border-color: #6366f1; /* Indigo focus color */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Button Styling */
+.auth-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.auth-btn:hover {
+  background-color: #4f46e5;
+}
+
+.auth-btn:disabled {
+  background-color: #a5a6f6;
+  cursor: not-allowed;
+}
+
+/* Footer Link */
+.auth-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.auth-link {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+/* Add this to Auth.css */
+
+.form-row {
+  display: flex;
+  gap: 1rem; /* Space between side-by-side inputs */
+}
+
+.form-row > div {
+  flex: 1; /* Makes both inputs equal width */
+}
+
+/* Optional: Add a subtle separator text */
+.form-section-title {
+  text-align: left;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

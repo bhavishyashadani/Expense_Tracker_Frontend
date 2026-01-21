@@ -1,0 +1,56 @@
+/* --- Navigation --- */
+.back-btn {
+  background: none;
+  border: none;
+  color: #6b7280; /* Gray text */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #1f2937; /* Darker on hover */
+  text-decoration: none;
+}
+
+/* --- Expense Specifics --- */
+.expense-amount {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ef4444; /* Red color for negative flow */
+}
+
+/* --- Layout Adjustments --- */
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+/* Inherit generic item styles but allow overrides */
+.expense-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s;
+}
+
+.expense-item-container:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Modal Overrides (Optional specific sizing) --- */
+.modal-content.expense-modal {
+  max-width: 380px;
+}

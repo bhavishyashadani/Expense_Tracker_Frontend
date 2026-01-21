@@ -1,0 +1,73 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 2rem; /* Spacing from content */
+  position: sticky; /* Optional: sticks to top */
+  top: 0;
+  z-index: 50;
+}
+
+/* Logo / Brand Name */
+.nav-brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #6366f1; /* Indigo */
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  margin-right: 2rem;
+}
+
+/* Links Section */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Individual Links */
+.nav-item {
+  text-decoration: none;
+  color: #6b7280; /* Gray text */
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent; /* Invisible border for hover effect */
+}
+
+.nav-item:hover {
+  color: #1f2937; /* Darker gray on hover */
+}
+
+/* Active Link State (Automatically applied by NavLink) */
+.nav-item.active {
+  color: #6366f1; /* Indigo */
+  border-bottom-color: #6366f1;
+}
+
+/* Logout Button */
+.nav-logout {
+  background: none;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #4b5563;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-logout:hover {
+  background-color: #fef2f2; /* Light red bg */
+  color: #ef4444; /* Red text */
+  border-color: #fca5a5;
+}

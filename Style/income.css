@@ -1,0 +1,87 @@
+/* --- Income List Styles --- */
+.income-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.income-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s;
+}
+
+.income-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.income-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.income-source {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.income-date {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.income-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.income-amount {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #10b981; /* Green for income */
+}
+
+/* Badges for Cash/Online */
+.badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.badge-cash { background-color: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+.badge-online { background-color: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; }
+
+/* --- Modal Styles (For Edit) --- */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  animation: scaleUp 0.2s ease-out;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes scaleUp { from { transform: scale(0.95); } to { transform: scale(1); } }
